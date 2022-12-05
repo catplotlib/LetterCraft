@@ -15,6 +15,7 @@ function Result({
     navigator.clipboard.writeText(result);
     setIsCopied(true);
   };
+  // console.log("result", result);
   return (
     <div className={styles.container}>
       <h1 className={styles.heading}>Your new CV is here!</h1>
