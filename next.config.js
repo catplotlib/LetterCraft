@@ -4,4 +4,5 @@ module.exports = {
     config.resolve.fallback = { fs: false };
     return config;
   },
+  target: 'serverless'
 };
