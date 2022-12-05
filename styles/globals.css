@@ -1,0 +1,8 @@
+body {
+  background-color: #252525;
+  font-family: "popins", sans-serif;
+}
+
+/* import poppins 400 and 700 from google fonts */  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+

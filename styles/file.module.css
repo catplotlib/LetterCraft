@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  color: #8a8888;
+  font-family: "popins", sans-serif;
+}
+.uploadBox {
+  border: 4px dashed #8a8888;
+  padding: 10px;
+  text-align: center;
+  width: 435px;
+  height: 547px;
+  color: #8a8888;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.uploadBox p {
+  font-family: "popins", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  width: 250px;
+}
+.pdfFile {
+  border: 4px dashed #8a8888;
+  padding: 10px;
+  text-align: center;
+  width: 435px;
+  height: 547px;
+  color: #8a8888;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  overflow: hidden;
+}
+@media only screen and (max-width: 600px) {
+  .uploadBox {
+    width: 300px;
+    height: 447px;
+  }
+  .pdfFile {
+    width: 300px;
+    height: 447px;
+  }
+}
