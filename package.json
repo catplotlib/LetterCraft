@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "better-react-spinkit": "^2.0.4",
     "fs": "^0.0.1-security",
     "lodash": "^4.17.21",
     "next": "^12.1.6",
