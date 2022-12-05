@@ -21,7 +21,7 @@ export default function Hero({
     setLoading(true);
     event.preventDefault();
     const response = await fetch(
-      `${process.env.REACT_APP_BLOG_API}/api/generate`,
+      `${process.env.PORT}/api/generate`,
       {
         method: "POST",
         headers: {
