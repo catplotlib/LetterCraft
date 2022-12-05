@@ -3,6 +3,7 @@ import { useState } from "react";
 import Home from "../components/Home";
 import Result from "../components/Result";
 import Loading from "../components/Loading";
+import Footer from "../components/Footer";
 const Index = () => {
   const [submit, setSubmit] = useState(false);
   const [result, setResult] = useState();
@@ -39,6 +40,7 @@ const Index = () => {
           setPdfText={setPdfText}
         />
       )}
+      <Footer />
     </div>
   );
 };
