@@ -13,7 +13,7 @@ const Loading = () => {
       }}
     >
       <Circle color="#024c42" size={100} />
-      <p style={{color:'white'}}>Consulting the hive</p>
+      <p style={{color:'white'}}>Generating AI magic...</p>
     </div>
   );
 };

@@ -15,7 +15,9 @@ const File = ({ pdfText, setPdfText }) => {
     // if pdfFile the a different className
     <div className={styles.container}>
       <div className={pdfFile ? styles.pdfFile : styles.uploadBox}>
-        <input type="file" accept="application/pdf" required onChange={handlePdfChange} />
+       
+        <input type="file" style={{height:'100%',width:'100%'}} accept="application/pdf" required onChange={handlePdfChange} />
+    
         {pdfFile && (
           <Document
             file={pdfFile}

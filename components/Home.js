@@ -17,19 +17,15 @@ export default function Hero({
   // console.log(pdfText);
 
   async function onSubmit(event) {
-
     setLoading(true);
     event.preventDefault();
-    const response = await fetch(
-      `https://jovial-sherbet-f27b78.netlify.app/api/generate`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ job: jobInput, pdfText: pdfText }),
-      }
-    );
+    const response = await fetch(`api/generate`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ job: jobInput, pdfText: pdfText }),
+    });
     const data = await response.json();
     setResult(data.result);
     console.log(data.result);
