@@ -21,7 +21,7 @@ export default function Hero({
     setLoading(true);
     event.preventDefault();
     const response = await fetch(
-      `${process.env.PORT}/api/generate`,
+      `/.netlify/functions/api/generate`,
       {
         method: "POST",
         headers: {
