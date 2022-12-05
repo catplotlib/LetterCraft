@@ -4,6 +4,7 @@ import Home from "../components/Home";
 import Result from "../components/Result";
 import Loading from "../components/Loading";
 import Footer from "../components/Footer";
+import Head from "next/head";
 const Index = () => {
   const [submit, setSubmit] = useState(false);
   const [result, setResult] = useState();
@@ -13,6 +14,11 @@ const Index = () => {
 
   return (
     <div>
+      <Head>
+        {/* add a title */} 
+        <title>LetterCraft</title>
+        <link rel="shortcut icon" href="/favicon.ico" />
+      </Head>
       {loading ? (
         <Loading />
       ) : submit ? (
