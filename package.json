@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "proxy":"https://jovial-sherbet-f27b78.netlify.app/"
   },
   "dependencies": {
     "better-react-spinkit": "^2.0.4",

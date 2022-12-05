@@ -21,7 +21,7 @@ export default function Hero({
     setLoading(true);
     event.preventDefault();
     const response = await fetch(
-      `/.netlify/functions/api/generate`,
+      `https://jovial-sherbet-f27b78.netlify.app/api/generate`,
       {
         method: "POST",
         headers: {
